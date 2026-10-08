@@ -16,7 +16,7 @@ This project follows the **Medallion Architecture** to organize data into three 
 
 ### 🔄 Data Flow
 
-![image_url](
+![image_url](https://github.com/areebajabbar888-byte/sql-data-warehouse-project/blob/bebd495aa229d3e916e28575160a35a5ac487694/docs/03-Data%20Warehouse.jpeg)
 
 - **Bronze Layer**: Stores raw data loaded from the source datasets.
 - **Silver Layer**: Cleans, standardizes, and transforms the raw data.
@@ -100,7 +100,12 @@ The Gold layer is designed to support analysis in the following areas:
 DataWarehouse/
 │
 ├── datasets/
-│   └── Source datasets
+│   ├── CUST_AZ12.csv
+│   ├── LOC_A101.csv
+│   ├── PX_CAT_G1V2.csv
+│   ├── cust_info.csv
+│   ├── prd_info.csv
+│   └── sales_details.csv
 │
 ├── docs/
 │   ├── 01-Data Flow.jpeg
@@ -117,7 +122,7 @@ DataWarehouse/
 │   │   └── ddl_bronze_layer.sql
 │   │
 │   ├── gold/
-│   │   └── ...
+│   │   └── ddl_gold.sql
 │   │
 │   └── init_database.sql
 │
